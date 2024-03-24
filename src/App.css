@@ -1,0 +1,301 @@
+body {
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+.contentSection {
+}
+
+.contentSection .MuiBox-root {
+  @apply w-full;
+}
+
+.SearchSection {
+  @apply items-center gap-5 p-5;
+}
+
+.SearchSection .SearchBar {
+  @apply w-full;
+}
+
+.SearchSection .submitBtn {
+  @apply w-full cursor-not-allowed font-bold text-white rounded-[5px] bg-green-500 px-3 py-[.4rem] transition-all opacity-80;
+
+
+  &.active {
+    opacity: 1;
+    @apply cursor-pointer;
+  }
+
+  &.active:hover {
+    transform: scale(.98);
+  }
+
+  &.active:active {
+    transform: scale(1.08);
+  }
+}
+
+.SearchBar .SearchItem {
+  @apply w-full relative  flex mb-2 py-1 px-2 bg-white  rounded-s-sm;
+}
+
+.SearchBar .SearchItem span {
+  @apply block py-1 px-2 rounded-sm min-w-[80px] bg-slate-900 mr-2 text-white text-[14px] font-semibold text-center;
+}
+
+.SearchBar .SearchItem input {
+  @apply text-[14px] flex-1 outline-none;
+}
+
+.SearchBar .SearchItem p {
+  @apply bg-red-300 absolute top-1/2 right-1 rounded-full px-2   text-[12px] text-red-600 font-medium leading-6;
+
+  transform: translateY(-50%);
+}
+
+/* tbody tr {
+  @apply cursor-pointer transition-all bg-white border-b dark:bg-gray-800 dark:border-gray-700;
+
+  &:hover {
+    @apply dark:bg-gray-600;
+  }
+
+} */
+
+.btnSave {
+  &:hover {
+    box-shadow: 0 0 15px 4px #459c63;
+  }
+}
+
+.sidebarr {
+  @apply p-4;
+}
+
+
+.MuiTabs-flexContainer button {
+  @apply bg-blue-600 font-bold border-blue-600;
+
+  &:nth-child(2) {
+    @apply bg-slate-900;
+    border: 2px solid rgb(37 99 235);
+  }
+}
+
+.MuiTabs-scroller .MuiTabs-indicator {
+  @apply bg-blue-600;
+}
+
+.MuiBox-root.css-19kzrtu {
+  @apply p-0;
+}
+
+.sidebarr .MuiTabs-flexContainer {
+  @apply h-full;
+}
+
+.sidebarr .MuiTabs-flexContainer button {
+  @apply h-1/2 bg-slate-900 text-white;
+}
+
+.sidebarr .MuiTabs-scroller .MuiTabs-indicator {
+  @apply bg-green-500;
+}
+/* 
+.sidebarr #vertical-tabpanel-0 {
+  @apply w-full flex justify-center items-center;
+} */
+
+.sidebarr .btnSave {
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.modal__content {
+  @apply flex flex-col mt-3;
+}
+
+.modal__content .modal__list {
+  @apply list-none max-h-[250px] overflow-scroll;
+  overflow-x: hidden; 
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-xl;
+  box-shadow: inset 0 0 5px grey; 
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600 rounded-xl;
+}
+
+.modal__list li {
+  @apply flex items-center justify-between;
+}
+
+.modal__list li p {
+  @apply flex-1 text-[14px];
+}
+
+.modal__content .modal__btnSection {
+  @apply w-full flex mt-3;
+}
+
+.modal__btnSection button {
+  @apply w-1/2 px-3 py-2 font-medium text-[14px] bg-blue-600 text-white rounded-sm;
+  border: 2px solid rgb(37 99 235);
+  transition: all .2s linear;
+
+  &:first-child {
+    @apply bg-transparent text-slate-900;
+  }
+
+  &:hover {
+    transform: scale(.97);
+  }
+
+  &:active {
+    transform: scale(1.04);
+  }
+}
+
+#modal-modal-title {
+  @apply text-[16px];
+}
+
+#modal-modal-title .strong__span {
+  @apply px-2 mx-1 bg-blue-600 rounded-md text-white font-medium;
+
+  &.delete {
+    @apply bg-blue-600;
+  }
+}
+
+/* .urlBodyList {
+  @apply mb-2 max-h-[300px] overflow-scroll;
+}
+
+.urlBodyList .list__item {
+  @apply px-[6px] py-[2px];
+} */
+
+.table__wrapper {
+  @apply mt-3;
+}
+
+.table__wrapper .table__top {
+  @apply flex justify-between items-center bg-slate-700 px-2 py-1;
+
+}
+
+.table__top input {
+  @apply outline-none px-2 py-1 text-[16px] font-medium;
+  border: 1px solid rgb(37 99 235);
+
+}
+
+.table__top button {
+  @apply px-2 py-1 text-white font-medium bg-slate-900 text-[12px] rounded-md transition-all;
+  border: 1px solid rgb(37 99 235);
+
+  &:hover {
+    @apply bg-blue-500;
+    transform: scale(.98);
+  }
+
+  &.unactive {
+    @apply cursor-not-allowed;
+    opacity: .8;
+  }
+
+  &.unactive:hover {
+    transform: scale(1);
+  }
+}
+
+.table__wrapper .table__bottom {
+  @apply flex flex-col max-h-[235px] overflow-scroll;
+    overflow-x: hidden;
+}
+
+.table__bottom .list__item {
+  @apply flex items-center bg-slate-800 px-2 py-2 transition-all;
+
+  &:hover {
+    @apply bg-slate-700 cursor-pointer;
+  }
+}
+
+.list__item .item__img {
+  @apply w-[30px] h-[30px] p-1;
+}
+
+.list__item h3 {
+  @apply flex-1 mx-4 text-[13px] font-medium text-white;
+}
+
+.list__item .item__btn {
+  @apply px-2 py-1 text-white bg-slate-900 text-[14px] rounded-md transition-all;
+  border: 1px solid rgb(37 99 235);
+
+  &:hover {
+    @apply bg-blue-500;
+    transform: scale(.98);
+  }
+}
+
+.modal__btnSection.delete {
+  @apply mt-3;
+}
+
+.modal__btnSection .btnDelete {
+  @apply w-1/2 px-3 py-2 font-medium text-[14px] bg-transparent text-slate-900 rounded-r-sm;
+  border: 2px solid rgb(37 99 235);
+  transition: all .2s linear;
+  border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  &:first-child {
+    @apply bg-blue-600 text-white rounded-l-sm;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:hover {
+    transform: scale(.97);
+  }
+
+  &:active {
+    transform: scale(1.04);
+  }
+}
+
+.subControl .subleft {
+  @apply px-2;
+}
+
+.subleft i {
+  @apply text-white;
+}
+
+.subleft .MuiSwitch-track  {
+  @apply bg-green-500;
+}
+
+.subleft .MuiButtonBase-root .MuiSwitch-thumb{
+  @apply bg-green-500;
+}
+
+.subleft .MuiButtonBase-root.Mui-checked .MuiSwitch-thumb{
+  @apply bg-blue-500;
+}
